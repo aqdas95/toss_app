@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +12,45 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+ion-navbar {
+    background: $nav-background;
+}
+
+ion-content {
+    background-image: url('../../assets/imgs/basic-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+button.yin-yang {
+    background: url('../../assets/imgs/icon.png');
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+}
+
+.md button.yin-yang {
+    background: url('../../assets/imgs/icon.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+ion-content.home {
+    background-image: url('../../assets/imgs/background-home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.md ion-content.home {
+    background-image: url('../../assets/imgs/background-home-md.png');
+    background-repeat: no-repeat;
+    background-size: fit;
+    text-align: center;
+}
