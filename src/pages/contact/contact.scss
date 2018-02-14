@@ -1,3 +1,88 @@
-page-contact {
+page-contact {}
 
+//---------------------IOS---------------------
+.ios .panel-items {
+    margin-top: 32px;
+}
+
+.ios .panel-input {
+    height: 50px;
+    width: 350px;
+    margin: 15px;
+}
+
+.ios .panel-label {
+    margin: 20px;
+    font-size: 32px;
+}
+
+.ios .panel-textarea {
+    font-size: 22px;
+    width: 85%
+}
+
+.ios .panel-btn {
+    padding: 15px;
+    background: #A43F49;
+    font-size: 26px;
+    color: white;
+    width: 85%
+}
+
+//---------------------WEB---------------------
+.md .panel-items {
+    margin-top: 32px;
+}
+
+.md .panel-label {
+    font-size: 32px;
+}
+
+.md .panel-input {
+    height: 50px;
+    width: 30%;
+    margin: 15px
+}
+
+.md .panel-textarea {
+    width: 50%;
+    font-size: 22px;
+}
+
+.md .panel-btn {
+    padding: 15px;
+    background: #A43F49;
+    font-size: 26px;
+    color: white;
+}
+
+//---------------------ANDROID---------------------
+.platform-android .panel-items {
+    margin-top: 32px;
+}
+
+.platform-android .panel-input {
+    height: 50px;
+    border: 1px solid black;
+    width: 300px;
+    margin: 15px;
+}
+
+.platform-android .panel-label {
+    margin: 15px;
+    font-size: 32px;
+}
+
+.platform-android .panel-textarea {
+    font-size: 22px;
+    width: 85%;
+    border: 1px solid black;
+}
+
+.platform-android .panel-btn {
+    padding: 15px;
+    background: #A43F49;
+    font-size: 26px;
+    color: white;
+    width: 85%
 }
