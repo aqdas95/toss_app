@@ -23,25 +23,14 @@ ion-content {
     text-align: center;
 }
 
-button.yin-yang {
-    background: url('../../assets/imgs/icon.png');
+.ios ion-content.home {
+    background-image: url('../../assets/imgs/background-home.png');
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    bottom: 0;
+    text-align: center;
 }
 
-.md button.yin-yang {
-    background: url('../../assets/imgs/icon.png');
-    background-size: cover;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-}
-
-ion-content.home {
+.platform-android ion-content.home {
     background-image: url('../../assets/imgs/background-home.png');
     background-repeat: no-repeat;
     background-size: cover;
