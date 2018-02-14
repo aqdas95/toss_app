@@ -1,1 +1,16 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+
+    <ion-content padding>
+        <ion-list>
+            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+                {{p.title}}
+            </button>
+            
+            <ion-item style="position:absolute;bottom:0">Version 1.1.0 - 2018</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+
+
+<ion-nav [root]="rootPage" #content></ion-nav>
