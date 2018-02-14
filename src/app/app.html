@@ -3,17 +3,21 @@
     <ion-content padding>
         <ion-list>
             <button ion-item (click)="openPage(tabs)">
-              Home
+              New Toss
             </button>
             <button ion-item (click)="openPage(friendsPage)">
-              Friends
+              About Us
             </button>
-            <button ion-item (click)="foo()">
-              Events
+            <button ion-item (click)="openPage(friendsPage)">
+             Payment
+            </button>
+            <button ion-item (click)="check()">
+              Contact
             </button>
             <button ion-item (click)="closeMenu()">
-              Close Menu
+              Terms & Conditions
             </button>
+            <ion-item style="position:absolute;bottom:0">Version 1.1.0 - 2018</ion-item>
         </ion-list>
     </ion-content>
 </ion-menu>
