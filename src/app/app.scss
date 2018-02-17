@@ -23,8 +23,34 @@ ion-content {
     text-align: center;
 }
 
+
+
+// iOS styling
+
 .ios ion-content.home {
     background-image: url('../../assets/imgs/background-home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+
+
+// Web Browser Styling
+
+.md ion-content.home {
+    background-image: url('../../assets/imgs/background-home-md.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+
+
+// Android special stylings
+
+.platform-android ion-content{
+    background-image: url('../assets/imgs/basic-background.png');
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -34,12 +60,5 @@ ion-content {
     background-image: url('../assets/imgs/background-home.png');
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-}
-
-.md ion-content.home {
-    background-image: url('../../assets/imgs/background-home-md.png');
-    background-repeat: no-repeat;
-    background-size: fit;
     text-align: center;
 }
