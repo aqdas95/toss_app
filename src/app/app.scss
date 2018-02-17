@@ -23,7 +23,9 @@ ion-content {
     text-align: center;
 }
 
-
+ion-content.menu > .fixed-content{
+    background: white;
+}
 
 // iOS styling
 

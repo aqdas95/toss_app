@@ -1,6 +1,6 @@
 <ion-menu [content]="content">
 
-    <ion-content padding>
+    <ion-content padding class="menu">
         <ion-list>
             <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
                 {{p.title}}
