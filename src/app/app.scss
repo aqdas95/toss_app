@@ -23,6 +23,10 @@ ion-content {
     text-align: center;
 }
 
+
+
+// iOS styling
+
 .ios ion-content.home {
     background-image: url('../../assets/imgs/background-home.png');
     background-repeat: no-repeat;
@@ -30,16 +34,31 @@ ion-content {
     text-align: center;
 }
 
-.platform-android ion-content.home {
-    background-image: url('../../assets/imgs/background-home.png');
+
+
+// Web Browser Styling
+
+.md ion-content.home {
+    background-image: url('../../assets/imgs/background-home-md.png');
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
 }
 
-.md ion-content.home {
-    background-image: url('../../assets/imgs/background-home-md.png');
+
+
+// Android special stylings
+
+.platform-android ion-content{
+    background-image: url('../assets/imgs/basic-background.png');
     background-repeat: no-repeat;
-    background-size: fit;
+    background-size: cover;
+    text-align: center;
+}
+
+.platform-android ion-content.home {
+    background-image: url('../assets/imgs/background-home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 }
