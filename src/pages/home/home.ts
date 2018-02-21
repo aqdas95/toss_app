@@ -11,11 +11,6 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
     
   }
-  ac: AppComponent = new AppComponent();
 }
 
-export class AppComponent{
-  foo():void{
-    alert("Ahsan")
-  }
-}
+

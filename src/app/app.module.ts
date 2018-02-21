@@ -21,7 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     GamePage,
-    TermsPage
+    TermsPage,
   ],
   imports: [
     BrowserModule,

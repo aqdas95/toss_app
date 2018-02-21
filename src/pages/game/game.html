@@ -1,22 +1,66 @@
 <ion-header>
     <ion-navbar>
-            <ion-buttons left>
-                    <button ion-button icon-only menuToggle>
+        <ion-buttons left>
+            <button ion-button icon-only menuToggle>
                 <ion-icon name="menu"></ion-icon>   
                 </button>
-        
-                </ion-buttons>
+
+        </ion-buttons>
         <ion-title>
-        Game
+            Game
         </ion-title>
     </ion-navbar>
 </ion-header>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script>
+    var count = 1;
 
+    function check() {
+        $("#" + count).css("background", "#6d0d0d")
+        $("." + count).css("background", "#6d0d0d")
+        count++;
+    }
+</script>
 <ion-content no-bounce class="home">
-        <div class="flex-container">
-                <div class="line-flex"></div>
-                <div class="coins"></div>
-                <button class="yin-yang"></button>
+    <div class="flex-container">
+        <div class="line-flex"></div>
+        <div class="coins"></div>
+        <button class="yin-yang" (click)="check()"></button>
+        <div class="bottom-bar">
+            <div class="firstdivbox">
+                <span class="firstspace">&nbsp;</span><span id=0 class="firstbox">?</span>
+            </div>
+            <div class="divbox">
+                <span class="space 1">&nbsp;</span><span id=1 class="mybox">1</span>
+            </div>
+            <div class="divbox">
+                <span class="space 2">&nbsp;</span><span id=2 class="mybox">2</span>
+            </div>
+            <div class="divbox">
+                <span class="space 3 ">&nbsp;</span><span id=3 class="mybox">3</span>
+            </div>
+            <div class="divbox">
+                <span class="space 4">&nbsp;</span><span id=4 class="mybox">4</span>
+            </div>
+            <div class="divbox">
+                <span class="space 5">&nbsp;</span><span id=5 class="mybox">5</span>
+            </div>
+            <div class="divbox">
+
+                <span class="space 6">&nbsp;</span><span id=6 class="mybox">6</span>
+            </div>
+
+            <div class="divbox">
+                <span class="space 7">&nbsp;</span><span id=7 class="mybox"><i class="material-icons" style="width:16px;font-size:18px">description</i></span>
+            </div>
+            <div class="divbox">
+
+                <span class="space 8">&nbsp;</span><span id=8 class="mybox"><i class="material-icons" style="width:16px;font-size:18px">share_alt</i></span>
+            </div>
         </div>
+
+
+
+    </div>
+
 </ion-content>
-      
