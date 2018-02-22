@@ -38,9 +38,13 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  grad-top: #76726B, 
+  grad-bottom: #484745
 );
 
+$nav-background: linear-gradient(to bottom, color($colors, grad-top) 0%, color($colors, grad-bottom) 100%);
+$toolbar-background: transparent;
 
 // App iOS Variables
 // --------------------------------------------------
