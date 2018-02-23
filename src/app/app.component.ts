@@ -23,7 +23,7 @@ export class MyApp {
     });
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Terms & Conditions', component: TermsPage }
+      { title: 'About I Ching', component: TermsPage }
     ];
   }
   openPage(page){
