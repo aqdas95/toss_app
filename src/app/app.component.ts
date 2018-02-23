@@ -5,6 +5,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { TermsPage } from '../pages/terms/terms';
+//import { TabsPage } from '../pages/tabs/tabs';
+import { AboutPage } from '../pages/about/about'
 
 @Component({
   templateUrl: 'app.html'
@@ -23,7 +25,8 @@ export class MyApp {
     });
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'About I-Ching', component: TermsPage }
+      { title: 'About I-Ching', component: TermsPage },
+      { title: 'About Us', component: AboutPage }
     ];
   }
   openPage(page){
