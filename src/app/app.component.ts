@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 //import { TabsPage } from '../pages/tabs/tabs';
+import { AboutPage } from '../pages/about/about'
 
 @Component({
   templateUrl: 'app.html'
@@ -22,7 +23,8 @@ export class MyApp {
       splashScreen.hide();
     });
     this.pages = [
-      { title: 'Home', component: HomePage }
+      { title: 'Home', component: HomePage }, 
+      { title: 'About Us', component: AboutPage }
     ];
   }
   openPage(page){
