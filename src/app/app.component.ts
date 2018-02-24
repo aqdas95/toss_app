@@ -25,7 +25,7 @@ export class MyApp {
     });
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'About I-Ching', component: TermsPage },
+      { title: 'About I Ching', component: TermsPage },
       { title: 'About Us', component: AboutPage }
     ];
   }
