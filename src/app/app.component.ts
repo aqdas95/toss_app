@@ -8,6 +8,8 @@ import { TermsPage } from '../pages/terms/terms';
 //import { TabsPage } from '../pages/tabs/tabs';
 import { AboutPage } from '../pages/about/about'
 
+import { ContactPage } from '../pages/contact/contact'
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -26,7 +28,8 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'About I Ching', component: TermsPage },
-      { title: 'About Us', component: AboutPage }
+      { title: 'About Us', component: AboutPage },
+      { title: 'Contact', component: ContactPage }      
     ];
   }
   openPage(page){
