@@ -23,7 +23,11 @@ export class MyApp {
     });
     this.pages = [
       { title: 'Home', component: HomePage },
+<<<<<<< HEAD
       { title: 'About I Ching', component: TermsPage }
+=======
+      { title: 'About I-Ching', component: TermsPage }
+>>>>>>> bd7aeadfc35e93dbb5d5b5bb5f3d0cf35b0f2b55
     ];
   }
   openPage(page){
