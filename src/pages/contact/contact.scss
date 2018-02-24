@@ -6,87 +6,259 @@ page-contact {
 
 
 //---------------------WEB---------------------
-.md .panel-items {
-    margin-top: 32px;
-}
-
-.md .panel-label {
-    font-size: 32px;
-}
-
-.md .panel-input {
-    height: 50px;
-    width: 30%;
-    //margin: 15px
-}
-
-.md .panel-textarea {
-    width: 50%;
-    font-size: 22px;
-}
 
 .md .panel-btn {
-    padding: 15px;
+    padding: 3%;
+    margin-top:6%;
+    text-align: center;
     background: #A43F49;
     font-size: 26px;
-    color: white;
+    color: lightgray;
+    position: relative;  
+    border-radius: 8px; 
 }
 
-//---------------------IOS---------------------
-.ios .panel-items {
-    margin-top: 6%;
-}
+.md * {
+    box-sizing: border-box;
+  }
+  
+  .md html {
+    font-size: 16px/1.6;
+    font-family: Eina,Helvetica,sans-serif;
+  }
+  
+  .md form {
+    width: 100%;
+    float: left;
+    margin: 2% 0% 3% 2%;
+  }
+  .md form > div {
+    position: relative;
+    overflow: hidden;
+  }
 
-.ios .panel-input {
-    height: 50px;
-    width: 90%;
-}
+.md form label {
+    width:100%;
+    padding: 3.3% 1% 2% 4%;
+    transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    position: absolute;
+    color: grey;
+    opacity: 0.6;
+  }
 
-.ios .panel-label {
-    margin: 20px;
-    font-size: 32px;
-}
+  .md  form input, form textarea {
+    width: 95%;
+    border: 1px solid grey;
+    background: none;
+    position: relative;
+    top: 1%;
+    left: 0;
+    z-index: 1;
+    padding:  4.5% 1% 2% 2%;
+    outline: 0;
+  }
 
-.ios .panel-textarea {
-    font-size: 22px;
-    width: 90%
-}
+  .md form input:valid, form textarea:valid {
+    background: white;
+  }
+  .md form input:focus, form textarea:focus {
+    border-color: #A43F49;
+  }
+  .md form input:focus + label ,form input:valid + label, form textarea:focus + label, form textarea:valid + label {
+    background: white;
+    color: #A43F49;
+    font-size: 80%;
+    padding: 1% 1% 2% 3%;
+    position:absolute;
+    margin: 0px 0px 0px 5px;
+    z-index: 2;
+    opacity: 100;
+  }
+  .md form.go-bottom label {
+    top: 1%;
+    bottom: 0;
+    left: 1%;
+    width: 100%;
+  }
+  .md form.go-bottom input:focus,form.go-bottom input:valid, form.go-bottom textarea:focus,form.go-bottom textarea:valid {
+    padding: 4.5% 1% 2% 2%;
+  }
+  .md form.go-bottom input:focus + label, form.go-bottom input:valid + label{
+    bottom: 100%;
+    top:-15%;
+  }
+  .md form.go-bottom textarea:focus + label, form.go-bottom textarea:valid + label {
+    bottom: 100%;
+    top:-4.7%;
+  }
+
+// //---------------------IOS---------------------
 
 .ios .panel-btn {
-    margin-top: 6%;
-    padding: 15px;
+    padding: 3%;
+    margin-top:6%;
+    text-align: center;
     background: #A43F49;
     font-size: 26px;
-    color: white;
-    width: 90%
+    color: lightgray;
+    position: relative; 
+    border-radius: 8px;
 }
 
-//---------------------ANDROID---------------------
-.platform-android .panel-items {
-    margin-top: 6%;
-}
+.ios * {
+    box-sizing: border-box;
+  }
+  
+  .ios html {
+    font-size: 16px/1.6;
+    font-family: Eina,Helvetica,sans-serif;
+  }
+  
+  .ios form {
+    width: 100%;
+    float: left;
+    margin: 2% 0% 3% 2%;
+  }
+  .ios form > div {
+    position: relative;
+    overflow: hidden;
+  }
 
-.platform-android .panel-input {
-    height: 50px;
-    margin: 0px;
-    width: 90%;
-}
+.ios form label {
+    width:100%;
+    padding: 3.3% 1% 2% 4%;
+    transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    position: absolute;
+    color: grey;
+    opacity: 0.6;    
+  }
 
-.platform-android .panel-label {
-    margin-top: 50px;
-    font-size: 32px;
-}
+  .ios  form input, form textarea {
+    width: 95%;
+    border: 1px solid grey;
+    background: none;
+    position: relative;
+    top: 1%;
+    left: 0;
+    z-index: 1;
+    padding:  4.5% 1% 2% 2%;
+    outline: none;
+  }
 
-.platform-android .panel-textarea {
-    font-size: 22px;
-    width: 90%
-}
+  .ios form input:valid, form textarea:valid {
+    background: white;
+  }
+  .ios form input:focus, form textarea:focus {
+    border-color: #A43F49;
+  }
+  .ios form input:focus + label ,form input:valid + label, form textarea:focus + label, form textarea:valid + label{
+    background: white;
+    color: #A43F49;
+    font-size: 80%;
+    padding: 1% 1% 2% 3%;
+    position:absolute;
+    margin: 0px 0px 0px 5px;
+    z-index: 2;
+    opacity: 100;    
+  }
+  .ios form.go-bottom label {
+    top: 1%;
+    bottom: 0;
+    left: 1%;
+    width: 100%;
+  }
+  .ios form.go-bottom input:focus,form.go-bottom input:valid, form.go-bottom textarea:focus,form.go-bottom textarea:valid{
+    padding: 4.5% 1% 2% 2%;
+  }
+  .ios form.go-bottom input:focus + label, form.go-bottom input:valid + label{
+    bottom: 100%;
+    top:-15%;
+  }
+  .ios form.go-bottom textarea:focus + label, form.go-bottom textarea:valid + label{
+    bottom: 100%;
+    top:-4.7%;
+  }
+
+  // //---------------------ANDROID---------------------
 
 .platform-android .panel-btn {
-    margin-top: 4%;
-    padding: 15px;
+    padding: 3%;
+    margin-top:6%;
+    text-align: center;
     background: #A43F49;
     font-size: 26px;
-    color: white;
-    width: 90%
+    color: lightgray;
+    position: relative;  
+    border-radius: 8px;  
 }
+.platform-android * {
+    box-sizing: border-box;
+  }
+  
+  .platform-android html {
+    font-size: 16px/1.6;
+    font-family: Eina,Helvetica,sans-serif;
+  }
+  
+  .platform-android form {
+    width: 100%;
+    float: left;
+    margin: 2% 0% 3% 2%;
+  }
+  .platform-android form > div {
+    position: relative;
+    overflow: hidden;
+  }
+
+.platform-android form label {
+    width:100%;
+    padding: 3.3% 1% 2% 4%;
+    transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    position: absolute;
+    color: grey;
+  }
+
+  .platform-android form input, form textarea {
+    width: 95%;
+    border: 1px solid grey;
+    background: none;
+    position: relative;
+    top: 1%;
+    left: 0;
+    z-index: 1;
+    padding:  4.5% 1% 2% 2%;
+    outline: 0;
+  }
+
+  .platform-android form input:valid, form textarea:valid {
+    background: white;
+  }
+  .platform-android form input:focus, form textarea:focus {
+    border-color: #A43F49;
+  }
+  .platform-android form input:focus + label ,form input:valid + label, form textarea:focus + label, form textarea:valid + label {
+    background: white;
+    color: #A43F49;
+    font-size: 80%;
+    padding: 1% 1% 2% 3%;
+    position:absolute;
+    margin: 0px 0px 0px 5px;
+    z-index: 2;
+  }
+  .platform-android form.go-bottom label {
+    top: 1%;
+    bottom: 0;
+    left: 1%;
+    width: 100%;
+  }
+  .platform-android form.go-bottom input:focus,form.go-bottom input:valid, form.go-bottom textarea:focus,form.go-bottom textarea:valid {
+    padding: 4.5% 1% 2% 2%;
+  }
+  .platform-android form.go-bottom input:focus + label, form.go-bottom input:valid + label{
+    bottom: 100%;
+    top:-12%;
+  }
+  .platform-android form.go-bottom textarea:focus + label, form.go-bottom textarea:valid + label{
+    bottom: 100%;
+    top:-3.5%;
+  }
