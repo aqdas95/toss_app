@@ -1,23 +1,27 @@
 page-contact {  
   .scroll-content {
     overflow: hidden;
+    overflow-y: auto;
+  }
+  .go-bottom{
+    width:99%;
   }
 }
-
 
 //---------------------WEB---------------------
 
 .md .panel-btn {
-    padding: 3%;
-    margin-top:6%;
-    text-align: center;
-    background: #A43F49;
-    font-size: 26px;
-    color: lightgray;
-    position: relative;  
-    border-radius: 8px; 
+  padding: 3% 4% 3% 4%;
+  margin-top:6%;
+  margin-bottom:1%;
+  text-align: center;
+  background: color($colors, btn-msg);
+  font-size: 20px;
+  color: color($colors, btn-text);
+  position: relative;  
+  border-radius: 3px;   
+  box-shadow: 0 3px 10px 0 color($colors, shadow) , 0 3px 10px 0 color($colors, shadow);    
 }
-
 .md * {
     box-sizing: border-box;
   }
@@ -46,8 +50,8 @@ page-contact {
     opacity: 0.6;
   }
 
-  .md  form input, form textarea {
-    width: 95%;
+  .md  form input, form textarea {    
+    width: 96.5%;
     border: 1px solid grey;
     background: none;
     position: relative;
@@ -56,19 +60,21 @@ page-contact {
     z-index: 1;
     padding:  4.5% 1% 2% 2%;
     outline: 0;
+    box-shadow: 0 3px 10px 0 color($colors, shadow), 0 3px 10px 0 color($colors, shadow);  
+    margin-bottom: 1%;  
   }
 
   .md form input:valid, form textarea:valid {
     background: white;
   }
   .md form input:focus, form textarea:focus {
-    border-color: #A43F49;
+    border-color: color($colors, focus-color);
   }
   .md form input:focus + label ,form input:valid + label, form textarea:focus + label, form textarea:valid + label {
     background: white;
-    color: #A43F49;
+    color: color($colors, focus-color);
     font-size: 80%;
-    padding: 1% 1% 2% 3%;
+    padding: 1% 0% 2% 1%;
     position:absolute;
     margin: 0px 0px 0px 5px;
     z-index: 2;
@@ -85,26 +91,34 @@ page-contact {
   }
   .md form.go-bottom input:focus + label, form.go-bottom input:valid + label{
     bottom: 100%;
-    top:-15%;
+    top:-15%;  
+    width: 4.5% !important;    
   }
   .md form.go-bottom textarea:focus + label, form.go-bottom textarea:valid + label {
     bottom: 100%;
-    top:-4.7%;
+    top:-9%;
+    width: 6% !important;
   }
-
+  .md .labelInput{
+    width:18%;
+  }
+  .md .labelTextArea{
+    width:25%
+  }
 // //---------------------IOS---------------------
 
 .ios .panel-btn {
-    padding: 3%;
-    margin-top:6%;
-    text-align: center;
-    background: #A43F49;
-    font-size: 26px;
-    color: lightgray;
-    position: relative; 
-    border-radius: 8px;
+  padding: 3% 4% 3% 4%;
+  margin-top:6%;
+  margin-bottom:2%;
+  text-align: center;
+  background: color($colors, btn-msg);
+  font-size: 20px;
+  color: color($colors, btn-text);
+  position: relative;  
+  border-radius: 3px;   
+  box-shadow: 0 3px 10px 0 color($colors, shadow) , 0 3px 10px 0 color($colors, shadow);  
 }
-
 .ios * {
     box-sizing: border-box;
   }
@@ -134,7 +148,7 @@ page-contact {
   }
 
   .ios  form input, form textarea {
-    width: 95%;
+    width: 96.5%;
     border: 1px solid grey;
     background: none;
     position: relative;
@@ -143,19 +157,21 @@ page-contact {
     z-index: 1;
     padding:  4.5% 1% 2% 2%;
     outline: none;
+    box-shadow: 0 3px 10px 0 color($colors, shadow), 0 3px 10px 0 color($colors, shadow);  
+    margin-bottom: 1%;  
   }
 
   .ios form input:valid, form textarea:valid {
     background: white;
   }
   .ios form input:focus, form textarea:focus {
-    border-color: #A43F49;
+    border-color: color($colors, focus-color);
   }
   .ios form input:focus + label ,form input:valid + label, form textarea:focus + label, form textarea:valid + label{
     background: white;
-    color: #A43F49;
-    font-size: 80%;
-    padding: 1% 1% 2% 3%;
+    color: color($colors, focus-color);
+    font-size: 80%;    
+    padding: 1% 0% 2% 1%;
     position:absolute;
     margin: 0px 0px 0px 5px;
     z-index: 2;
@@ -172,24 +188,34 @@ page-contact {
   }
   .ios form.go-bottom input:focus + label, form.go-bottom input:valid + label{
     bottom: 100%;
-    top:-15%;
+    top:-14.3%;   
+    width: 12% !important;        
   }
   .ios form.go-bottom textarea:focus + label, form.go-bottom textarea:valid + label{
     bottom: 100%;
-    top:-4.7%;
+    top:-3%;
+    width: 17% !important;      
+  }
+  .ios .labelInput{
+    width:18%;
+  }
+  .ios .labelTextArea{
+    width:25%
   }
 
   // //---------------------ANDROID---------------------
 
 .platform-android .panel-btn {
-    padding: 3%;
-    margin-top:6%;
-    text-align: center;
-    background: #A43F49;
-    font-size: 26px;
-    color: lightgray;
-    position: relative;  
-    border-radius: 8px;  
+  padding: 3% 4% 3% 4%;
+  margin-top:6%;
+  margin-bottom:2%;
+  text-align: center;
+  background: color($colors, btn-msg);
+  font-size: 20px;
+  color: color($colors, btn-text);
+  position: relative;  
+  border-radius: 3px;   
+  box-shadow: 0 3px 10px 0 color($colors, shadow) , 0 3px 10px 0 color($colors, shadow);    
 }
 .platform-android * {
     box-sizing: border-box;
@@ -216,10 +242,11 @@ page-contact {
     transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
     position: absolute;
     color: grey;
+    opacity: 0.6;        
   }
 
   .platform-android form input, form textarea {
-    width: 95%;
+    width: 96.5%;
     border: 1px solid grey;
     background: none;
     position: relative;
@@ -228,22 +255,25 @@ page-contact {
     z-index: 1;
     padding:  4.5% 1% 2% 2%;
     outline: 0;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.2);  
+    margin-bottom: 1%;  
   }
 
   .platform-android form input:valid, form textarea:valid {
     background: white;
   }
   .platform-android form input:focus, form textarea:focus {
-    border-color: #A43F49;
+    border-color: color($colors, focus-color);
   }
   .platform-android form input:focus + label ,form input:valid + label, form textarea:focus + label, form textarea:valid + label {
     background: white;
-    color: #A43F49;
+    color: color($colors, focus-color);
     font-size: 80%;
-    padding: 1% 1% 2% 3%;
+    padding: 1% 0% 2% 1%;
     position:absolute;
     margin: 0px 0px 0px 5px;
     z-index: 2;
+    opacity: 100;        
   }
   .platform-android form.go-bottom label {
     top: 1%;
@@ -257,8 +287,16 @@ page-contact {
   .platform-android form.go-bottom input:focus + label, form.go-bottom input:valid + label{
     bottom: 100%;
     top:-12%;
+    width: 12% !important;        
   }
   .platform-android form.go-bottom textarea:focus + label, form.go-bottom textarea:valid + label{
     bottom: 100%;
-    top:-3.5%;
+    top:-3%;
+    width: 17% !important;    
+  }
+  .platform-android .labelInput{
+    width:18%;
+  }
+  .platform-android .labelTextArea{
+    width:25%
   }
