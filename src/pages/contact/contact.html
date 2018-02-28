@@ -12,23 +12,33 @@
    </ion-header>
   <ion-content no-bounce class="scroll-content">
   
-  
-      <div class="panel" style="text-align:center">
-          <div class="panel-items">
-              <label class="panel-label">Name</label><br>
-              <input type="text" class="panel-input" />
+      <form class="go-bottom">
+        <div style="text-align:center">
+          <span style="font-size:20pt;">
+            <strong>Got a Question?</strong>
+            <br>
+          </span>
+          <span style="color:gray">
+              We are here to answer!
+          </span>
+          <br>
+          <br>
+        </div>
+          <div> 
+              <input type="text" id="name" class="name" required/>
+              <label for="name" class="labelInput">Name</label>            
           </div>
-          <div class="panel-items">
-              <label class="panel-label">E-mail</label><br>
-              <input type="text" class="panel-input" />
+          <div style="margin-top:5%">
+            <input type="text" id="email" class="email" required/>
+            <label for="email" class="labelInput">Email</label>         
           </div>
-          <div class="panel-items">
-              <label class="panel-label">Message</label><br>
-              <textarea rows="5" cols="40" class="panel-textarea"></textarea>
+          <div style="margin-top:5%">
+              <textarea rows="11" cols="40" id="msg" class="msg" required></textarea>       
+            <label for="msg" class="labelTextArea">Message</label>      
           </div>
-          <div class="panel-items">
+          <div style="text-align:center">
               <button class="panel-btn">Send Message</button>
           </div>
-      </div>
+        </form>
   
   </ion-content>
