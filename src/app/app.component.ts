@@ -6,13 +6,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 //import { TabsPage } from '../pages/tabs/tabs';
 import { AboutPage } from '../pages/about/about'
+import { GoogleAnalyticsPage } from '../pages/google-analytics/google-analytics'
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage:any = HomePage;
+  rootPage:any = GoogleAnalyticsPage;
   pages: Array<{title: string, component: any}>;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
