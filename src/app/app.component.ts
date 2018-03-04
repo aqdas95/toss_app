@@ -26,7 +26,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage }, 
       { title: 'About Us', component: AboutPage },
-      { title: 'In-App Purchases', component: SubscribePage }
+      { title: 'Subscriptions', component: SubscribePage }
     ];
   }
   openPage(page){
