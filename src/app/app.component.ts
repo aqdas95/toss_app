@@ -13,7 +13,7 @@ import { SubscribePage } from './../pages/subscribe/subscribe';
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage:any = SubscribePage;
+  rootPage:any = HomePage;
   pages: Array<{title: string, component: any}>;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
@@ -25,7 +25,8 @@ export class MyApp {
     });
     this.pages = [
       { title: 'Home', component: HomePage }, 
-      { title: 'About Us', component: AboutPage }
+      { title: 'About Us', component: AboutPage },
+      { title: 'In-App Purchases', component: SubscribePage }
     ];
   }
   openPage(page){
