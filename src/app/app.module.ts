@@ -11,6 +11,7 @@ import { TermsPage } from '../pages/terms/terms';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SubscribePage } from './../pages/subscribe/subscribe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    TermsPage
+    TermsPage,
+    SubscribePage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    TermsPage
+    TermsPage,
+    SubscribePage
   ],
   providers: [
     StatusBar,
