@@ -6,6 +6,12 @@ page-contact {
   .go-bottom{
     width:99%;
   }
+
+  ion-content{
+    text-align: left !important;
+    /*background-color: beige !important;
+    background-image: none !important;*/
+  }
 }
 
 //---------------------WEB---------------------
@@ -47,7 +53,8 @@ page-contact {
     transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
     position: absolute;
     color: grey;
-    opacity: 0.6;
+    opacity: 0.6;    
+    /*background-color: beige !important;   */
   }
 
   .md  form input, form textarea {    
@@ -144,7 +151,8 @@ page-contact {
     transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
     position: absolute;
     color: grey;
-    opacity: 0.6;    
+    opacity: 0.6; 
+    /*background-color: beige !important;   */
   }
 
   .ios  form input, form textarea {
@@ -242,7 +250,8 @@ page-contact {
     transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
     position: absolute;
     color: grey;
-    opacity: 0.6;        
+    opacity: 0.6;  
+    /*background-color: beige !important;   */      
   }
 
   .platform-android form input, form textarea {

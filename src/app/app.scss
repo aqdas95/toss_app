@@ -28,3 +28,24 @@ ion-content {
 ion-content.menu > .fixed-content{
     background: white;
 }
+
+.ios ion-content {
+    background-image: url('../../assets/imgs/background-home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.md ion-content {
+    background-image: url('../../assets/imgs/background-home-md.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.platform-android ion-content{
+    background-image: url('../assets/imgs/background-home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}

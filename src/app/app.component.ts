@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { TermsPage } from '../pages/terms/terms';
 //import { TabsPage } from '../pages/tabs/tabs';
 import { AboutPage } from '../pages/about/about'
+import { SubscribePage } from './../pages/subscribe/subscribe';
 
 import { ContactPage } from '../pages/contact/contact'
 
@@ -27,9 +28,10 @@ export class MyApp {
     });
     this.pages = [
       { title: 'Home', component: HomePage },
+      { title: 'In-App Purchases', component: SubscribePage },
       { title: 'About I Ching', component: TermsPage },
       { title: 'About Us', component: AboutPage },
-      { title: 'Contact', component: ContactPage }      
+      { title: 'Contact', component: ContactPage } 
     ];
   }
   openPage(page){
