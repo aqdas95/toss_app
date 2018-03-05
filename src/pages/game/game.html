@@ -1,0 +1,136 @@
+<ion-header>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+        <ion-navbar>
+            <ion-buttons left>
+                <button ion-button icon-only menuToggle>
+                    <ion-icon name="menu"></ion-icon>   
+                    </button>
+    
+            </ion-buttons>
+            <ion-title>
+                Game
+            </ion-title>
+        </ion-navbar>
+    </ion-header>
+    <script>
+        var count = 1;
+    
+        function check() {
+            $("#" + count).css("background", "#6d0d0d")
+            $("." + count).css("background", "#6d0d0d")
+            count++;
+        }
+    </script>
+    <ion-content no-bounce class=".scroll-content">
+        <div class="flex-container">
+            <div class="line-flex">
+                    <div class="maindiv" align="center">
+			
+                            <div class="mainbar" align=center>
+                                
+                                <div class="bars1" align=center>
+                
+                                    <div class="bar" id="1">
+                                    </div>
+                
+                                    <div class="bar" id="3">
+                                    </div>
+                
+                                    <div class="bar" id="5">
+                                    </div>
+                
+                                    <div class="bar" id="7">
+                                    </div>
+                
+                                    <div class="bar" id="9">
+                                    </div>
+                
+                                    <div class="bar" id="11">
+                                    </div>
+                                
+                                </div >
+                                
+                                <div class="arrow" align=center>
+                                <i class="material-icons" style="color:grey;font-size:79px;">trending_flat</i>    
+                            </div>
+                                
+                                <div class="bars2" align=center>
+                
+                                    <div class="bar" id="2">
+                                    </div>
+                
+                                    <div class="bar" id="4">
+                                    </div>
+                
+                                    <div class="bar" id="6">
+                                    </div>
+                
+                                    <div class="bar" id="8">
+                                    </div>
+                
+                                    <div class="bar" id="10">
+                                    </div>
+                
+                                    <div class="bar" id="12">
+                                    </div>
+                            
+                                </div >
+                
+                            </div>
+                        </div>
+                        
+            </div>
+            <div class="timer">
+                <div id="coin1">
+                  <div class="side-a"></div>
+                  <div class="side-b"></div>
+                </div>
+                <div id="coin2">
+                  <div class="side-a"></div>
+                  <div class="side-b"></div>
+                </div>
+                <div id="coin3">
+                  <div class="side-a"></div>
+                  <div class="side-b"></div>
+                </div>
+                </div>
+            <button class="yin-yang" (click)="check()"></button>
+            <div class="bottom-bar">
+                <div class="firstdivbox">
+                    <span class="firstspace">&nbsp;</span><span id=20 class="firstbox">?</span>
+                </div>
+                <div class="divbox">
+                    <span class="space 21">&nbsp;</span><span id=21 class="mybox">1</span>
+                </div>
+                <div class="divbox">
+                    <span class="space 22">&nbsp;</span><span id=22 class="mybox">2</span>
+                </div>
+                <div class="divbox">
+                    <span class="space 23 ">&nbsp;</span><span id=23 class="mybox">3</span>
+                </div>
+                <div class="divbox">
+                    <span class="space 24">&nbsp;</span><span id=24 class="mybox">4</span>
+                </div>
+                <div class="divbox">
+                    <span class="space 25">&nbsp;</span><span id=25 class="mybox">5</span>
+                </div>
+                <div class="divbox">
+    
+                    <span class="space 26">&nbsp;</span><span id=26 class="mybox">6</span>
+                </div>
+    
+                <div class="divbox">
+                    <span class="space 27">&nbsp;</span><span id=27 class="mybox" style="padding-right:3px !important"><i class="material-icons" style="width:14px;font-size:14px;margin-left:-35%;">description</i></span>
+                </div>
+                <div class="divbox">
+    
+                    <span class="space 28">&nbsp;</span><span id=28 class="mybox" style="padding-right:3px !important"><i class="material-icons" style="width:14px;font-size:14px;margin-left:-50%;">share_alt</i></span>
+                </div>
+            </div>
+    
+    
+    
+        </div>
+    
+    </ion-content> 
