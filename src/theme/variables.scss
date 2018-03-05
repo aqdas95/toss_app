@@ -41,10 +41,10 @@ $colors: (
   dark:       #222,
   grad-top: #76726B, 
   grad-bottom: #484745,
-  btn-msg:rgb(223, 136, 144),
+  btn-msg:#a2404b,
   shadow: rgba(0,0,0,0.2),
-  focus-color:rgb(223, 136, 144),
-  btn-text:rgb(241, 240, 240)
+  focus-color:black,
+  btn-text:white
 );
 
 $nav-background: linear-gradient(to bottom, color($colors, grad-top) 0%, color($colors, grad-bottom) 100%);
