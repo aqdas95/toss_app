@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 //import { TabsPage } from '../pages/tabs/tabs';
 import { AboutPage } from '../pages/about/about'
 import { TermsPage } from '../pages/terms/terms';
+import { TossBarsPage } from '../pages/tossbars/tossbars';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,7 +27,8 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage }, 
       { title: 'About Us', component: AboutPage },
-      { title: 'About I Ching', component: TermsPage }
+      { title: 'About I Ching', component: TermsPage },
+      { title: 'Toss Bars', component: TossBarsPage }
     ];
   }
   openPage(page){
