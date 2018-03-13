@@ -1,15 +1,35 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AdMobFree, AdMobFreeBannerConfig, AdMobFreeInterstitialConfig } from '@ionic-native/admob-free';
+import * as $ from 'jquery';
+import { DISABLED } from '@angular/forms/src/model';
+
 
 @Component({
   selector: 'page-googleadmob',
   templateUrl: 'googleadmob.html'
 })
-export class GoogleAdMobPage {
+export class GoogleAdMobPage 
+{
+  public disabled1: string;
+  public disabled2: string;
 
-  constructor(public navCtrl: NavController, public admob: AdMobFree) {
+  constructor(public navCtrl: NavController, public admob: AdMobFree) 
+  {
+  }
 
+  adclick1()
+  {
+    $('.addiv1').prependTo('.card');
+    $('.addiv1').removeAttr("click");
+    this.launchInterstitial();
+  }
+  
+  adclick2()
+  {
+    $('.addiv2').prependTo('.card');
+    $('.addiv2').removeAttr("click");
+    this.launchInterstitial();
   }
 
   showBanner() 

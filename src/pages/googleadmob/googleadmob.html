@@ -6,14 +6,31 @@
             </button>
           </ion-buttons>
       
-          <ion-title>Google-AdMob</ion-title>
+          <ion-title>Result</ion-title>
       
     </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
-    <button ion-button (click)="showBanner()">Show Banner</button>
-    <button ion-button (click)="launchInterstitial()">Show Interstitial</button>
+    <div class="card">
+  
+        <div class="resultdiv styling">
+          <h3 align="center">Player Result</h3>
+          <p>
+            This starter project comes with simple tabs-based layout for apps
+            that are going to primarily use a Tabbed UI.
+          </p>
+          <p>
+            Take a look at the <code>src/pages/</code> directory to add or change tabs,
+            update any existing page or create new pages.
+          </p>
+        </div>
+      
+        <button class="styling addiv1 ads" (click) = "adclick1()"><p>AD 1</p></button>
+        
+        <button class="styling addiv2 ads" (click) = "adclick2()"><p>AD 2</p>></button>
+
+    </div>
     
 </ion-content>
