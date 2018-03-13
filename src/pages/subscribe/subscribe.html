@@ -1,5 +1,10 @@
 <ion-header>
     <ion-navbar>
+        <ion-buttons left>
+            <button ion-button icon-only menuToggle>
+                      <ion-icon name="menu"></ion-icon>   
+                    </button>
+        </ion-buttons>
         <ion-title>
             Subscriptions
         </ion-title>
@@ -11,7 +16,7 @@
 
         <div id="slides">
 
-            <ion-slides pager>
+            <ion-slides pager autoplay="3000" loop="true" speed="800">
                 <ion-slide>
                     <h1>Reason 1</h1>
                     <img src="assets/imgs/rewind.png" class="slide-img">
