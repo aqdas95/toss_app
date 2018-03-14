@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -25,7 +23,7 @@ ion-content {
     text-align: center;
 }
 
-ion-content.menu > .fixed-content{
+ion-content.menu>.fixed-content {
     background: white;
 }
 
@@ -43,7 +41,7 @@ ion-content.menu > .fixed-content{
     text-align: center;
 }
 
-.platform-android ion-content{
+.platform-android ion-content {
     background-image: url('../assets/imgs/background-home.png');
     background-repeat: no-repeat;
     background-size: cover;
