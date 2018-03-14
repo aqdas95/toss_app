@@ -6,10 +6,10 @@ import { DISABLED } from '@angular/forms/src/model';
 
 
 @Component({
-  selector: 'page-googleadmob',
-  templateUrl: 'googleadmob.html'
+  selector: 'page-result',
+  templateUrl: 'result.html'
 })
-export class GoogleAdMobPage 
+export class ResultPage 
 {
   public disabled1: string;
   public disabled2: string;
