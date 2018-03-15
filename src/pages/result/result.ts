@@ -63,5 +63,9 @@ export class ResultPage
         // success
     });
   }
+  showLove()
+  {
+    alert('aaaahhh aaahhhhhhh');
+  }
 
 }
