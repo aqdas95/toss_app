@@ -24,7 +24,15 @@ ion-content {
 }
 
 ion-content.menu>.fixed-content {
-    background: white;
+    background: #f2efea;
+}
+
+.menu-items {
+    display: block;
+    font-size: 24px;
+    background: none;
+    padding: 15px;
+    margin-top: 10px;
 }
 
 .ios ion-content {
