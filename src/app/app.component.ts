@@ -30,7 +30,6 @@ export class MyApp {
     });
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Game', component: GamePage },
       { title: 'Subscription', component: SubscribePage },
       { title: 'About I Ching', component: TermsPage },
       { title: 'About Us', component: AboutPage },
