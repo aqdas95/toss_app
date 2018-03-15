@@ -2,7 +2,7 @@
     
     ion-content h1 {
         font-size: 28px;
-        margin-top: 15%;
+        margin-top: 10%;
     }
     
     ion-content h2 {
@@ -35,22 +35,18 @@
     .ios .h2 {
         float: left;
         width: 30%;
-        margin-top: 10%
+        margin-top: 8%;
     }
     
     .ios .h2-sub {
         // float: right;
         margin-left: 8%;
-        float: left
-    }
-    
-    .ios .h2-sub-last {
-        margin-left: 8%;
-        float: left
+        float: left;
+        font-size: 95% !important;
     }
     
     .ios .h2-p {
-        font-size: 12px;
+        font-size: 80%;
     }
     
     .platform-android .slide-img {
@@ -72,21 +68,17 @@
     .platform-android .h2 {
         float: left;
         width: 30%;
-        margin-top: 10%
+        margin-top: 8%
     }
     
     .platform-android .h2-sub {
         margin-left: 8%;
-        float: left
-    }
-    
-    .platform-android .h2-sub-last {
-        margin-left: 8%;
-        float: left
+        float: left;
+        font-size: 95%;
     }
     
     .platform-android .h2-p {
-        font-size: 12px;
+        font-size: 80%;
     }
     
     .platform-android ion-content h2 {

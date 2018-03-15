@@ -1,25 +1,32 @@
 <ion-header>
     <ion-navbar>
+        <ion-buttons left>
+            <button ion-button icon-only menuToggle>
+                      <ion-icon name="menu"></ion-icon>   
+                    </button>
+        </ion-buttons>
         <ion-title>
-            Subscribe
+            Subscriptions
         </ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content no-bounce>
     <div align=center>
-        <div id="head">
-            <h1>Reason 1</h1>
-        </div>
+
         <div id="slides">
-            <ion-slides pager style="color:red">
+
+            <ion-slides pager autoplay="3000" loop="true" speed="800">
                 <ion-slide>
+                    <h1>Reason 1</h1>
                     <img src="assets/imgs/rewind.png" class="slide-img">
                 </ion-slide>
                 <ion-slide>
+                    <h1>Reason 2</h1>
                     <img src="assets/imgs/rewind.png" class="slide-img">
                 </ion-slide>
                 <ion-slide>
+                    <h1>Reason 3</h1>
                     <img src="assets/imgs/rewind.png" class="slide-img">
                 </ion-slide>
             </ion-slides>
@@ -39,10 +46,13 @@
             </div>
             <div class="cards">
                 <h2 class="h2">1 year</h2>
-                <h2 class="h2-sub-last ">$14.99/Month<br/>
+                <h2 class="h2-sub ">$14.99/Month<br/>
                     <p class="h2-p">Paid Monthly</p>
                 </h2>
             </div>
+        </div><br>
+        <div style="margin-bottom:5px;margin-top:5px;">
+            <a href=#>Restore Purchases</a>
         </div>
     </div>
 </ion-content>

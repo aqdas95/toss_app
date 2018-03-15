@@ -31,7 +31,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Game', component: GamePage },
-      { title: 'In-App Purchases', component: SubscribePage },
+      { title: 'Subscription', component: SubscribePage },
       { title: 'About I Ching', component: TermsPage },
       { title: 'About Us', component: AboutPage },
       { title: 'Contact', component: ContactPage }
