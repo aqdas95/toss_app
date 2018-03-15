@@ -10,6 +10,7 @@
           <ion-title>Contact</ion-title>
       </ion-navbar>
    </ion-header>
+
   <ion-content no-bounce class="scroll-content">
   
       <form class="go-bottom">
@@ -32,9 +33,9 @@
             <input type="text" id="email" class="email" required/>
             <label for="email" class="labelInput">Email</label>         
           </div>
-          <div style="margin-top:5%">
-              <textarea rows="11" cols="40" id="msg" class="msg" required></textarea>       
-            <label for="msg" class="labelTextArea">Message</label>      
+          <div style="margin-top:5%"> 
+              <textarea on-tap="scrollToBottom()" rows="11" cols="40" id="msg" class="msg" required></textarea>    
+              <label for="msg" class="labelTextArea">Message</label>      
           </div>
           <div style="text-align:center">
               <button class="panel-btn">Send Message</button>
