@@ -5,10 +5,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 //import { TabsPage } from '../pages/tabs/tabs';
-import { AboutPage } from '../pages/about/about'
+import { AboutPage } from '../pages/about/about';
+import { SubscribePage } from './../pages/subscribe/subscribe';
 import { TermsPage } from '../pages/terms/terms';
-
-import { ContactPage } from '../pages/contact/contact'
+import { ContactPage } from '../pages/contact/contact';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,6 +28,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Contact', component: ContactPage },
+      { title: 'Subscriptions', component: SubscribePage },
       { title: 'About Us', component: AboutPage },
       { title: 'About I Ching', component: TermsPage }
     ];
