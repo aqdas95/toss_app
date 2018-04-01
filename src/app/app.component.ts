@@ -8,7 +8,6 @@ import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { ResultPage } from '../pages/result/result';
 
-
 @Component({
   templateUrl: 'app.html'
 })

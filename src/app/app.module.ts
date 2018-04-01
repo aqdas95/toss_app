@@ -8,6 +8,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ResultPage } from '../pages/result/result';
+import { GamePage } from '../pages/game/game';
 
 import { AdMobFree } from '@ionic-native/admob-free';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,7 +21,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    ResultPage
+    ResultPage,
+    GamePage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    ResultPage
+    ResultPage,
+    GamePage
   ],
   providers: [
     StatusBar,
