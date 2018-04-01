@@ -8,6 +8,8 @@ import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about'
 import { TermsPage } from '../pages/terms/terms';
 
+import { ContactPage } from '../pages/contact/contact'
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -24,7 +26,8 @@ export class MyApp {
       splashScreen.hide();
     });
     this.pages = [
-      { title: 'Home', component: HomePage }, 
+      { title: 'Home', component: HomePage },
+      { title: 'Contact', component: ContactPage },
       { title: 'About Us', component: AboutPage },
       { title: 'About I Ching', component: TermsPage }
     ];

@@ -1,17 +1,45 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-navbar>
+  
+      <ion-buttons left>
+              <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>   
+      </button>
+  
+          </ion-buttons>
+          <ion-title>Contact</ion-title>
+      </ion-navbar>
+   </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
-</ion-content>
+  <ion-content no-bounce class="scroll-content">
+  
+      <form class="go-bottom">
+        <div style="text-align:center">
+          <span style="font-size:20pt;">
+            <strong>Got a Question?</strong>
+            <br>
+          </span>
+          <span style="color:gray">
+              We are here to answer!
+          </span>
+          <br>
+          <br>
+        </div>
+          <div> 
+              <input type="text" id="name" class="name" required/>
+              <label for="name" class="labelInput">Name</label>            
+          </div>
+          <div style="margin-top:5%">
+            <input type="text" id="email" class="email" required/>
+            <label for="email" class="labelInput">Email</label>         
+          </div>
+          <div style="margin-top:5%"> 
+              <textarea on-tap="scrollToBottom()" rows="11" cols="40" id="msg" class="msg" required></textarea>    
+              <label for="msg" class="labelTextArea">Message</label>      
+          </div>
+          <div style="text-align:center">
+              <button class="panel-btn">Send Message</button>
+          </div>
+        </form>
+  
+  </ion-content>
