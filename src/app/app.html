@@ -1,13 +1,13 @@
 <!-- <ion-nav [root]="rootPage"></ion-nav> -->
 <ion-menu [content]="content">
 
-    <ion-content padding class="menu">
+    <ion-content padding class="menu" no-bounce>
         <ion-list>
-            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+            <button menuClose *ngFor="let p of pages" (click)="openPage(p)" class="menu-items">
                 {{p.title}}
             </button>
 
-            <ion-item style="position:absolute;bottom:0">Version 1.1.0 - 2018</ion-item>
+            <div style="position:absolute;bottom:0;">Version 1.1.0 - 2018</div>
         </ion-list>
     </ion-content>
 </ion-menu>
