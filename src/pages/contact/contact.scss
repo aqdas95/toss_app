@@ -6,7 +6,9 @@ page-contact {
     .go-bottom {
         width: 99%;
     }
-}
+    ion-content {
+        text-align: left !important;
+    }}
 
 //---------------------WEB---------------------
 .md .panel-btn {
