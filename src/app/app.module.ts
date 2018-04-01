@@ -7,8 +7,10 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { ResultPage } from '../pages/result/result';
 import { GamePage } from '../pages/game/game';
 
+import { AdMobFree } from '@ionic-native/admob-free';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -19,6 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
+    ResultPage,
     GamePage
   ],
   imports: [
@@ -32,11 +35,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
+    ResultPage,
     GamePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    AdMobFree,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
